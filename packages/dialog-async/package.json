@@ -1,0 +1,35 @@
+{
+  "name": "dialog-async",
+  "version": "0.1.1",
+  "description": "A promise-based way to show dialogs in vue3",
+  "type": "module",
+  "main": "lib/core/index.js",
+  "module": "es/core/index.js",
+  "keywords": [
+    "vue3",
+    "dialog",
+    "promise"
+  ],
+  "scripts": {
+    "build": "tsc --outDir ./lib && tsc -m es6 --outDir ./es"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib/**/*",
+    "es/**/*"
+  ],
+  "author": "yeoolhj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeoolhj/dialog-async.git",
+    "directory": "packages/dialog-async"
+  },
+  "bugs": "https://github.com/yeoolhj/dialog-async/issues",
+  "license": "MIT"
+}

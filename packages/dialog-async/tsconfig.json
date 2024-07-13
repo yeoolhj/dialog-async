@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "module": "CommonJS",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "vue": ["../../node_modules/@vue/runtime-core/dist/runtime-core"]
+    }
+  },
+  "files": ["./index.ts", "../../node_modules/vue/jsx.d.ts"]
+}
